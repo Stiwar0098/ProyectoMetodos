@@ -1,4 +1,4 @@
-﻿namespace ProyectoMetodosNumericos.formularios
+﻿namespace ProyectoMetodosNumericos.Formularios
 {
     partial class frmHeun
     {
@@ -279,8 +279,7 @@
             this.label1.Size = new System.Drawing.Size(697, 39);
             this.label1.TabIndex = 27;
             this.label1.Text = "Método de Heun";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;            
             // 
             // btnAplicarMetodo
             // 

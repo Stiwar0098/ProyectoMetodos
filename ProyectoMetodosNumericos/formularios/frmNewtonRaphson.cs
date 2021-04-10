@@ -2,7 +2,7 @@
 using ProyectoMetodosNumericos.algoritmos;
 using ProyectoMetodosNumericos.Controladores;
 using ProyectoMetodosNumericos.Entidades;
-using ProyectoMetodosNumericos.formularios;
+using ProyectoMetodosNumericos.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

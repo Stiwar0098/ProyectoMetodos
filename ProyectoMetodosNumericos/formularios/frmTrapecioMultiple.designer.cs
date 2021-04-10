@@ -1,4 +1,4 @@
-﻿namespace ProyectoMetodosNumericos.formularios
+﻿namespace ProyectoMetodosNumericos.Formularios
 {
     partial class frmTrapecioMultiple
     {

@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoMetodosNumericos.formularios
+namespace ProyectoMetodosNumericos.Formularios
 {
     public partial class frmHeun : Form
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoMetodosNumericos.Formularios;
 
 namespace ProyectoMetodosNumericos
 {
@@ -16,7 +17,7 @@ namespace ProyectoMetodosNumericos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal());
+            Application.Run(new Formularios.frmPrincipal());
         }
     }
 }

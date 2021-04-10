@@ -1,6 +1,6 @@
-﻿namespace ProyectoMetodosNumericos
+﻿namespace ProyectoMetodosNumericos.Formularios
 {
-    partial class ProyectoMetodosNumericos
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -60,6 +60,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(884, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // métodosAbiertosToolStripMenuItem
             // 
@@ -177,8 +178,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 543);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // ProyectoMetodosNumericos
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,11 +190,11 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(900, 610);
-            this.Name = "ProyectoMetodosNumericos";
+            this.Name = "frmPrincipal";            
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Metodos Numéricos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ProyectoMetodosNumericos_Load);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -1,13 +1,12 @@
-﻿using ProyectoMetodosNumericos.formularios;
-using ProyectoMetodosNumericos.Formularios;
+﻿using ProyectoMetodosNumericos.Formularios;
 using System;
 using System.Windows.Forms;
 
-namespace ProyectoMetodosNumericos
+namespace ProyectoMetodosNumericos.Formularios
 {
-    public partial class ProyectoMetodosNumericos : Form
+    public partial class frmPrincipal : Form
     {
-        public ProyectoMetodosNumericos()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -72,7 +71,17 @@ namespace ProyectoMetodosNumericos
             Algoritmos.Algoritmos.addFormulario(panel1, fpm);
         }
 
-        private void ProyectoMetodosNumericos_Load(object sender, EventArgs e)
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

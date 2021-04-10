@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoMetodosNumericos.formularios
+namespace ProyectoMetodosNumericos.Formularios
 {
     public partial class frmPuntoMedio : Form
     {
@@ -178,6 +178,11 @@ namespace ProyectoMetodosNumericos.formularios
         private void txtYo_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

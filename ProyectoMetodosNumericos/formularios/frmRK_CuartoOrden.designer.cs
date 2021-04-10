@@ -1,4 +1,4 @@
-﻿namespace ProyectoMetodosNumericos.formularios
+﻿namespace ProyectoMetodosNumericos.Formularios
 {
     partial class frmRK_CuartoOrden
     {
@@ -280,6 +280,7 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Runge-Kutta de 4to Orden";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnAplicarMetodo
             // 
