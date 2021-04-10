@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calculus">
+      <HintPath>..\Calculus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,18 +47,122 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="algoritmos\Algoritmos.cs" />
+    <Compile Include="algoritmos\Validaciones.cs" />
+    <Compile Include="controladores\TLista.cs" />
+    <Compile Include="entidades\Biseccion.cs" />
+    <Compile Include="entidades\FalsaPosicion.cs" />
+    <Compile Include="entidades\Heun.cs" />
+    <Compile Include="entidades\Muller.cs" />
+    <Compile Include="entidades\NewtonRaphson.cs" />
+    <Compile Include="entidades\PuntoMedio.cs" />
+    <Compile Include="entidades\RK_CuartoOrden.cs" />
+    <Compile Include="entidades\Secante.cs" />
+    <Compile Include="formularios\frmBiseccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="formularios\frmBiseccion.designer.cs">
+      <DependentUpon>frmBiseccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmFalsaPosicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmFalsaPosicion.designer.cs">
+      <DependentUpon>frmFalsaPosicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmGaussLegendre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmGaussLegendre.designer.cs">
+      <DependentUpon>frmGaussLegendre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmHeun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmHeun.designer.cs">
+      <DependentUpon>frmHeun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmMuller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmMuller.designer.cs">
+      <DependentUpon>frmMuller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmNewtonRaphson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmNewtonRaphson.designer.cs">
+      <DependentUpon>frmNewtonRaphson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmPrincipal.designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmPuntoMedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmPuntoMedio.designer.cs">
+      <DependentUpon>frmPuntoMedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmRK_CuartoOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmRK_CuartoOrden.designer.cs">
+      <DependentUpon>frmRK_CuartoOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmSecante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmSecante.designer.cs">
+      <DependentUpon>frmSecante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmTrapecioMultiple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmTrapecioMultiple.designer.cs">
+      <DependentUpon>frmTrapecioMultiple.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="formularios\frmBiseccion.resx">
+      <DependentUpon>frmBiseccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmFalsaPosicion.resx">
+      <DependentUpon>frmFalsaPosicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmGaussLegendre.resx">
+      <DependentUpon>frmGaussLegendre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmHeun.resx">
+      <DependentUpon>frmHeun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmMuller.resx">
+      <DependentUpon>frmMuller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmNewtonRaphson.resx">
+      <DependentUpon>frmNewtonRaphson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmPuntoMedio.resx">
+      <DependentUpon>frmPuntoMedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmRK_CuartoOrden.resx">
+      <DependentUpon>frmRK_CuartoOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmSecante.resx">
+      <DependentUpon>frmSecante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmTrapecioMultiple.resx">
+      <DependentUpon>frmTrapecioMultiple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +173,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
