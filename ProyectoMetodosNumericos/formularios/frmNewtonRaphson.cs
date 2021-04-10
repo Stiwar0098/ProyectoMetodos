@@ -181,5 +181,35 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCifras_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
