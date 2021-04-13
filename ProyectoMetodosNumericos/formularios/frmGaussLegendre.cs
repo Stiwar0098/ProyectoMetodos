@@ -131,5 +131,10 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
         }
+
+        private void cmbCifrasSignif_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
