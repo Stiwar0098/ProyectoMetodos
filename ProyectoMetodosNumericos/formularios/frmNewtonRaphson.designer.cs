@@ -58,11 +58,17 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCifrasSignif = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // errorProvider
@@ -122,7 +128,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 272);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 347);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -140,13 +146,14 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(856, 257);
+            this.dataGridView1.Size = new System.Drawing.Size(856, 182);
             this.dataGridView1.TabIndex = 35;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.cmbCifras);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.lblEa);
@@ -154,6 +161,8 @@
             this.groupBox1.Controls.Add(this.txtVv);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txtCifrasSignif);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtEs);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblRaiz);
@@ -163,7 +172,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 151);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(661, 100);
+            this.groupBox1.Size = new System.Drawing.Size(661, 190);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos:";
@@ -190,7 +199,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifras.Location = new System.Drawing.Point(379, 62);
+            this.cmbCifras.Location = new System.Drawing.Point(298, 154);
             this.cmbCifras.Name = "cmbCifras";
             this.cmbCifras.Size = new System.Drawing.Size(51, 28);
             this.cmbCifras.TabIndex = 5;
@@ -201,11 +210,11 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(206, 70);
+            this.label11.Location = new System.Drawing.Point(13, 157);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 20);
+            this.label11.Size = new System.Drawing.Size(269, 20);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Cifras Significativas =\r\n";
+            this.label11.Text = "Cantidad de Decimales a Mostrar =\r\n";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // lblEa
@@ -213,7 +222,7 @@
             this.lblEa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEa.AutoSize = true;
             this.lblEa.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEa.Location = new System.Drawing.Point(491, 70);
+            this.lblEa.Location = new System.Drawing.Point(491, 82);
             this.lblEa.Name = "lblEa";
             this.lblEa.Size = new System.Drawing.Size(13, 20);
             this.lblEa.TabIndex = 16;
@@ -224,7 +233,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(454, 70);
+            this.label10.Location = new System.Drawing.Point(454, 82);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 20);
             this.label10.TabIndex = 15;
@@ -265,8 +274,9 @@
             // 
             // txtEs
             // 
+            this.txtEs.Enabled = false;
             this.txtEs.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEs.Location = new System.Drawing.Point(59, 67);
+            this.txtEs.Location = new System.Drawing.Point(59, 114);
             this.txtEs.Name = "txtEs";
             this.txtEs.Size = new System.Drawing.Size(132, 26);
             this.txtEs.TabIndex = 4;
@@ -276,7 +286,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 70);
+            this.label6.Location = new System.Drawing.Point(13, 117);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 20);
             this.label6.TabIndex = 8;
@@ -383,6 +393,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(881, 57);
             this.panel1.TabIndex = 37;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -393,6 +404,62 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Location = new System.Drawing.Point(14, 62);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(416, 46);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Seleccione:";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(211, 18);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(166, 22);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Cifras Significativas";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(90, 18);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(42, 22);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "ES";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(207, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Cifras Significativas = ";
+            // 
+            // txtCifrasSignif
+            // 
+            this.txtCifrasSignif.Enabled = false;
+            this.txtCifrasSignif.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCifrasSignif.Location = new System.Drawing.Point(378, 114);
+            this.txtCifrasSignif.Name = "txtCifrasSignif";
+            this.txtCifrasSignif.Size = new System.Drawing.Size(132, 26);
+            this.txtCifrasSignif.TabIndex = 4;
+            this.txtCifrasSignif.TextChanged += new System.EventHandler(this.txtCifrasSignif_TextChanged);
+            this.txtCifrasSignif.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEs_KeyPress);
             // 
             // frmNewtonRaphson
             // 
@@ -420,6 +487,8 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +520,10 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox txtCifrasSignif;
+        private System.Windows.Forms.Label label7;
     }
 }

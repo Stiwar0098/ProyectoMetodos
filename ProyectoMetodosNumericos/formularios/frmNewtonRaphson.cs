@@ -31,12 +31,20 @@ namespace ProyectoMetodosNumericos.Formularios
                 aux = false;
             if (string.IsNullOrEmpty(txtDerivada.Text))
                 aux = false;
-            if (string.IsNullOrEmpty(txtEs.Text))
-                aux = false;
             if (string.IsNullOrEmpty(txtX0.Text))
                 aux = false;
             if (cmbCifras.SelectedIndex < 0)
                 aux = false;
+            if (radioButton2.Checked)
+            {
+                if (string.IsNullOrEmpty(txtEs.Text))
+                    aux = false;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(txtCifrasSignif.Text))
+                    aux = false;
+            }
             return aux;
         }
 
@@ -101,7 +109,7 @@ namespace ProyectoMetodosNumericos.Formularios
                 hayValorVerdadero = false;
             else
             {
-                valorVerd = Convert.ToDouble(txtVv.Text);
+                valorVerd = Convert.ToDouble(txtVv.Text.Replace(".",","));
                 if (valorVerd == 0)
                     hayValorVerdadero = false;
             }
@@ -133,7 +141,7 @@ namespace ProyectoMetodosNumericos.Formularios
 
                 cifrasSignif = Convert.ToInt32(cmbCifras.SelectedItem);
                 x0 = Convert.ToDouble(txtX0.Text);
-                es = Convert.ToDouble(txtEs.Text);
+                es = CalcularES();
 
                 //APLICACIÓN DEL MÉTODO
                 if (!hayErrores)
@@ -162,11 +170,16 @@ namespace ProyectoMetodosNumericos.Formularios
             txtX0.Clear();
             lblRaiz.Text = " ";
             lblEa.Text = " ";
+            txtCifrasSignif.Clear();
             cmbCifras.SelectedIndex = -1;
             txtExpresion.Focus();
             mostrarDatosEnTabla(0, true);
         }
+        public double CalcularES()
+        {
 
+             return Convert.ToDouble(txtEs.Text);
+        }
         private void txtX0_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
@@ -210,6 +223,31 @@ namespace ProyectoMetodosNumericos.Formularios
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtEs.Enabled = false;
+            txtCifrasSignif.Enabled = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtEs.Enabled = true;
+            txtCifrasSignif.Enabled = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtCifrasSignif_TextChanged(object sender, EventArgs e)
+        {
+            if (!txtCifrasSignif.Text.Equals(""))
+            {
+                txtEs.Text = (0.5 * Math.Pow(10, 2 - Convert.ToInt32(txtCifrasSignif.Text))) + "";
+            }
         }
     }
 }
