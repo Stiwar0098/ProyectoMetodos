@@ -231,9 +231,9 @@
             this.txtSolucionAnalitica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSolucionAnalitica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSolucionAnalitica.Location = new System.Drawing.Point(167, 108);
+            this.txtSolucionAnalitica.Location = new System.Drawing.Point(175, 108);
             this.txtSolucionAnalitica.Name = "txtSolucionAnalitica";
-            this.txtSolucionAnalitica.Size = new System.Drawing.Size(573, 24);
+            this.txtSolucionAnalitica.Size = new System.Drawing.Size(565, 24);
             this.txtSolucionAnalitica.TabIndex = 1;
             // 
             // txtExpresion
@@ -241,9 +241,9 @@
             this.txtExpresion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExpresion.Location = new System.Drawing.Point(86, 78);
+            this.txtExpresion.Location = new System.Drawing.Point(139, 78);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(654, 24);
+            this.txtExpresion.Size = new System.Drawing.Size(601, 24);
             this.txtExpresion.TabIndex = 0;
             // 
             // label4
@@ -252,9 +252,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(14, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 18);
+            this.label4.Size = new System.Drawing.Size(155, 18);
             this.label4.TabIndex = 50;
-            this.label4.Text = "Solución Analítica:";
+            this.label4.Text = "Solución Analítica =";
             // 
             // dataGridView1
             // 
@@ -281,9 +281,9 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 46;
-            this.label2.Text = "f(x, y) =";
+            this.label2.Text = "Expresion f(x) =";
             // 
             // btnAplicarMetodo
             // 

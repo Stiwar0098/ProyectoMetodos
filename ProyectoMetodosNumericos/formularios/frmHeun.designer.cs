@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHeun));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbCifrasSignif = new System.Windows.Forms.ComboBox();
@@ -231,9 +231,9 @@
             this.txtSolucionAnalitica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSolucionAnalitica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSolucionAnalitica.Location = new System.Drawing.Point(170, 104);
+            this.txtSolucionAnalitica.Location = new System.Drawing.Point(178, 104);
             this.txtSolucionAnalitica.Name = "txtSolucionAnalitica";
-            this.txtSolucionAnalitica.Size = new System.Drawing.Size(557, 24);
+            this.txtSolucionAnalitica.Size = new System.Drawing.Size(549, 24);
             this.txtSolucionAnalitica.TabIndex = 1;
             // 
             // txtExpresion
@@ -241,9 +241,9 @@
             this.txtExpresion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExpresion.Location = new System.Drawing.Point(89, 74);
+            this.txtExpresion.Location = new System.Drawing.Point(142, 74);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(638, 24);
+            this.txtExpresion.Size = new System.Drawing.Size(585, 24);
             this.txtExpresion.TabIndex = 0;
             // 
             // label4
@@ -252,9 +252,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(17, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 18);
+            this.label4.Size = new System.Drawing.Size(155, 18);
             this.label4.TabIndex = 32;
-            this.label4.Text = "Solución Analítica:";
+            this.label4.Text = "Solución Analítica =";
             // 
             // dataGridView1
             // 
@@ -265,12 +265,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 271);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Size = new System.Drawing.Size(713, 258);
             this.dataGridView1.TabIndex = 31;
             // 
@@ -280,9 +280,9 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 28;
-            this.label2.Text = "f(x, y) =";
+            this.label2.Text = "Expresion f(x) =";
             // 
             // btnAplicarMetodo
             // 
