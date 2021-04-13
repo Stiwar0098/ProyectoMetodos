@@ -245,6 +245,7 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             if (!txtCifrasSignif.Text.Equals(""))
             {
+
                 txtEs.Text = (0.5 * Math.Pow(10, 2 - Convert.ToInt32(txtCifrasSignif.Text))) + "";
             }
         }
