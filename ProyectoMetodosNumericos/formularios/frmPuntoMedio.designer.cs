@@ -53,8 +53,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
@@ -326,6 +326,18 @@
             this.panel1.Size = new System.Drawing.Size(740, 61);
             this.panel1.TabIndex = 52;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(61, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(667, 39);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "METODO DE RUNGE KUTTA - PUNTO MEDIO";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -336,18 +348,6 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(61, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(516, 39);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "RUNGE KUTTA - PUNTO MEDIO";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // frmPuntoMedio
             // 

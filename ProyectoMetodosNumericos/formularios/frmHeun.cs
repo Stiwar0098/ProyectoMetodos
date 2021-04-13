@@ -186,6 +186,11 @@ namespace ProyectoMetodosNumericos.Formularios
         private void txtYo_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
-        }        
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
