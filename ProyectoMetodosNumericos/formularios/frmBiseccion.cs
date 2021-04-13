@@ -47,11 +47,20 @@ namespace ProyectoMetodosNumericos.Formularios
             if (string.IsNullOrEmpty(txtXl.Text))
                 aux = false;
             if (string.IsNullOrEmpty(txtXu.Text))
-                aux = false;
-            if (string.IsNullOrEmpty(txtEs.Text))
-                aux = false;
+                aux = false;           
             if (cmbCifrasSignif.SelectedIndex < 0)
                 aux = false;
+
+            if (radioButton2.Checked)
+            {
+                if (string.IsNullOrEmpty(txtEs.Text))
+                    aux = false;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(txtCifrasSignificativas.Text))
+                    aux = false;
+            }
             return aux;
         }
 
@@ -74,7 +83,8 @@ namespace ProyectoMetodosNumericos.Formularios
                 hayValorVerdadero = false;
             else
             {
-                valorVerd = Convert.ToDouble(txtVv.Text);
+                valorVerd = Convert.ToDouble(txtVv.Text.Replace(".",","));
+                
                 if (valorVerd == 0)
                     hayValorVerdadero = false;
             }
@@ -97,7 +107,8 @@ namespace ProyectoMetodosNumericos.Formularios
 
                 xl = Convert.ToDouble(txtXl.Text);
                 xu = Convert.ToDouble(txtXu.Text);
-                es = Convert.ToDouble(txtEs.Text);
+
+                es = calcularEs();
 
                 if (!hayErrores)
                 {
@@ -130,6 +141,7 @@ namespace ProyectoMetodosNumericos.Formularios
                     fxlfxr = Algoritmos.Algoritmos.toCifraSignif(lt.Fxl_fxr, cifrasSignif),
                     Error_de_Aproximación = lt.Iteración == 1 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Ea, cifrasSignif) + "%",
                     Error_Verdadero = Algoritmos.Algoritmos.toCifraSignif(lt.Et, cifrasSignif) + "%",
+
                 }).ToList();
             }
             else
@@ -157,6 +169,11 @@ namespace ProyectoMetodosNumericos.Formularios
             txtExpresion.Focus();
         }
 
+        public double calcularEs()
+        {            
+            return Convert.ToDouble(txtEs.Text);                                      
+        }
+
         private void txtXl_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
@@ -175,6 +192,31 @@ namespace ProyectoMetodosNumericos.Formularios
         private void txtEs_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtEs.Enabled = false;
+            txtCifrasSignificativas.Enabled = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCifrasSignificativas.Enabled = false;
+            txtEs.Enabled = true;
+        }
+
+        private void txtCifrasSignificativas_TextChanged(object sender, EventArgs e)
+        {
+            if (!txtCifrasSignificativas.Text.Equals(""))
+            {
+                txtEs.Text = (0.5 * Math.Pow(10, 2 - Convert.ToInt32(txtCifrasSignificativas.Text))) + "";
+            }            
         }
     }
 }
