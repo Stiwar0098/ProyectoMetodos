@@ -166,5 +166,10 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             Validaciones.validarDecimal(e, (TextBox)sender);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
