@@ -226,8 +226,8 @@ namespace ProyectoMetodosNumericos.Algoritmos
 
                 fxlfxr = fxl * fxr;
 
-                if(hayValorVerdadero)
-                    errorVerd = calcularErrorVerdadero(valorVerdadero, xr);
+                if (hayValorVerdadero)                                 
+                errorVerd = calcularErrorVerdadero(valorVerdadero, xr);                
 
                 if (iteracion > 1)
                 {
