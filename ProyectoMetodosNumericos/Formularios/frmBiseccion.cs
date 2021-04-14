@@ -103,7 +103,7 @@ namespace ProyectoMetodosNumericos.Formularios
                     hayErrores = true;
                 }
 
-                cifrasSignif = Convert.ToInt32(cmbCifrasSignif.SelectedItem);
+                cifrasSignif = Convert.ToInt32(cmbCifrasSignif.SelectedItem)+1;
 
                 xl = Convert.ToDouble(txtXl.Text);
                 xu = Convert.ToDouble(txtXu.Text);

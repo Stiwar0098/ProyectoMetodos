@@ -46,10 +46,12 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             if (hayValorVerdadero)
             {
-                dataGridView1.DataSource = listaPuntoMedio.Select(lt => new {
+                dataGridView1.DataSource = listaPuntoMedio.Select(lt => new
+                {
                     Iteración = lt.Iteracion,
                     Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
                     k1 = Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
+                    Xi2 = Algoritmos.Algoritmos.toCifraSignif(lt.Xi2, cifrasSignif),
                     y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
                     k2 = Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
                     yPuntoMedio = Algoritmos.Algoritmos.toCifraSignif(lt.YpuntoMedio, cifrasSignif),
@@ -57,15 +59,20 @@ namespace ProyectoMetodosNumericos.Formularios
                     ErrorGlobal = Algoritmos.Algoritmos.toCifraSignif(lt.ErrorGlobal, cifrasSignif) + "%",
                 }).ToList();
             }
-            dataGridView1.DataSource = listaPuntoMedio.Select(lt => new {
-                Iteración = lt.Iteracion,
-                Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
-                k1 = Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
-                y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
-                k2 = Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
-                yPuntoMedio = Algoritmos.Algoritmos.toCifraSignif(lt.YpuntoMedio, cifrasSignif),
-                yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),                
-            }).ToList();
+            else
+            {
+                dataGridView1.DataSource = listaPuntoMedio.Select(lt => new
+                {
+                    Iteración = lt.Iteracion,
+                    Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
+                    k1 = Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
+                    Xi2 = Algoritmos.Algoritmos.toCifraSignif(lt.Xi2, cifrasSignif),
+                    y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
+                    k2 = Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
+                    yPuntoMedio = Algoritmos.Algoritmos.toCifraSignif(lt.YpuntoMedio, cifrasSignif),
+                    yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),
+                }).ToList();
+            }
         }
 
         private void frmPuntoMedio_Load(object sender, EventArgs e)

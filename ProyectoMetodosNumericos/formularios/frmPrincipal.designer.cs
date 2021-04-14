@@ -67,6 +67,7 @@
             this.métodosAbiertosToolStripMenuItem.Name = "métodosAbiertosToolStripMenuItem";
             this.métodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.métodosAbiertosToolStripMenuItem.Text = "Métodos Abiertos";
+            this.métodosAbiertosToolStripMenuItem.Click += new System.EventHandler(this.métodosAbiertosToolStripMenuItem_Click);
             // 
             // bisecciónToolStripMenuItem
             // 
