@@ -321,7 +321,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 9);
+            this.label1.Location = new System.Drawing.Point(65, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(612, 48);
             this.label1.TabIndex = 32;
@@ -332,7 +332,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(881, 350);
+            this.ClientSize = new System.Drawing.Size(881, 541);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAplicarMetodo);
             this.Controls.Add(this.btnNuevo);
