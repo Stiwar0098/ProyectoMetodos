@@ -171,7 +171,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifrasSignif.Location = new System.Drawing.Point(544, 29);
+            this.cmbCifrasSignif.Location = new System.Drawing.Point(534, 29);
             this.cmbCifrasSignif.Name = "cmbCifrasSignif";
             this.cmbCifrasSignif.Size = new System.Drawing.Size(51, 26);
             this.cmbCifrasSignif.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(344, 34);
+            this.label11.Location = new System.Drawing.Point(330, 33);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(194, 20);
             this.label11.TabIndex = 34;
