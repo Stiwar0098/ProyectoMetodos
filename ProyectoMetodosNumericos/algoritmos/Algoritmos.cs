@@ -71,7 +71,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
 
             return cifrasSig;
         }
-        
+
         public static string toCifraSignif(double num, int cf)
         {
             string cifrasSig = null;
@@ -87,7 +87,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             bool huboPrimerDifCero = false;
             bool esNegativo = false;
 
-            
+
             if (num < 0) esNegativo = true;
             try
             {
@@ -111,7 +111,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             }
             catch (IndexOutOfRangeException)
             {
-                while(cont < cf)
+                while (cont < cf)
                 {
                     cifrasSig = cifrasSig + "0";
                     cont = cont + 1;

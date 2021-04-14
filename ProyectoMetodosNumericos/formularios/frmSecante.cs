@@ -72,7 +72,14 @@ namespace ProyectoMetodosNumericos.Formularios
             string expresion = null;
 
             bool hayValorVerdadero = true;
-            
+            if (string.IsNullOrEmpty(txtVv.Text))
+                hayValorVerdadero = false;
+            else
+            {
+                valorVerd = Convert.ToDouble(txtVv.Text);
+                if (valorVerd == 0)
+                    hayValorVerdadero = false;
+            }
 
             if (datosLlenos())
             {
@@ -97,7 +104,7 @@ namespace ProyectoMetodosNumericos.Formularios
                     listaSecante = Algoritmos.Algoritmos.secante(expresion, x0, x1, valorVerd, errorTolerancia, hayValorVerdadero);
 
                     mostrarDatosEnTabla(cifrasSignif, hayValorVerdadero);
-                    lblRaiz.Text = Algoritmos.Algoritmos.toCifraSignif(listaSecante[listaSecante.Count-1].X1, cifrasSignif);
+                    lblRaiz.Text = Algoritmos.Algoritmos.toCifraSignif(listaSecante[listaSecante.Count - 1].X1, cifrasSignif);
                     lblEa.Text = Algoritmos.Algoritmos.toCifraSignif(listaSecante[listaSecante.Count - 1].Ea, cifrasSignif) + "%";
                 }
             }
