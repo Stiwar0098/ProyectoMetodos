@@ -41,7 +41,9 @@
             this.lblEa = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtVv = new System.Windows.Forms.TextBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnAplicarMetodo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEs = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.txtX0 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAplicarMetodo = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -168,7 +168,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifras.Location = new System.Drawing.Point(170, 108);
+            this.cmbCifras.Location = new System.Drawing.Point(205, 108);
             this.cmbCifras.Name = "cmbCifras";
             this.cmbCifras.Size = new System.Drawing.Size(51, 26);
             this.cmbCifras.TabIndex = 5;
@@ -179,9 +179,9 @@
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(10, 110);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 20);
+            this.label11.Size = new System.Drawing.Size(195, 20);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Cifras Significativas =\r\n";
+            this.label11.Text = "Cantidad de Decimales =\r\n";
             // 
             // lblEa
             // 
@@ -215,6 +215,19 @@
             this.txtVv.TabIndex = 3;
             this.txtVv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVv_KeyPress);
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNuevo.Location = new System.Drawing.Point(746, 90);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(155, 35);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "Limpiar Todo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -225,6 +238,19 @@
             this.label9.Size = new System.Drawing.Size(146, 20);
             this.label9.TabIndex = 13;
             this.label9.Text = "Valor Verdadero =";
+            // 
+            // btnAplicarMetodo
+            // 
+            this.btnAplicarMetodo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAplicarMetodo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAplicarMetodo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAplicarMetodo.Location = new System.Drawing.Point(746, 27);
+            this.btnAplicarMetodo.Name = "btnAplicarMetodo";
+            this.btnAplicarMetodo.Size = new System.Drawing.Size(155, 35);
+            this.btnAplicarMetodo.TabIndex = 6;
+            this.btnAplicarMetodo.Text = "Aplicar Método";
+            this.btnAplicarMetodo.UseVisualStyleBackColor = false;
+            this.btnAplicarMetodo.Click += new System.EventHandler(this.btnAplicarMetodo_Click);
             // 
             // label8
             // 
@@ -315,32 +341,6 @@
             this.label3.Size = new System.Drawing.Size(41, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "x0 = ";
-            // 
-            // btnAplicarMetodo
-            // 
-            this.btnAplicarMetodo.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnAplicarMetodo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAplicarMetodo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAplicarMetodo.Location = new System.Drawing.Point(746, 27);
-            this.btnAplicarMetodo.Name = "btnAplicarMetodo";
-            this.btnAplicarMetodo.Size = new System.Drawing.Size(155, 35);
-            this.btnAplicarMetodo.TabIndex = 6;
-            this.btnAplicarMetodo.Text = "Aplicar Método";
-            this.btnAplicarMetodo.UseVisualStyleBackColor = false;
-            this.btnAplicarMetodo.Click += new System.EventHandler(this.btnAplicarMetodo_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNuevo.Location = new System.Drawing.Point(746, 90);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(155, 35);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "Limpiar Todo";
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label2
             // 

@@ -177,7 +177,8 @@ namespace ProyectoMetodosNumericos.Formularios
         }
         public double CalcularES()
         {
-            return Convert.ToDouble(txtEs.Text);
+
+             return Convert.ToDouble(txtEs.Text);
         }
         private void txtX0_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -245,7 +246,6 @@ namespace ProyectoMetodosNumericos.Formularios
         {
             if (!txtCifrasSignif.Text.Equals(""))
             {
-
                 txtEs.Text = (0.5 * Math.Pow(10, 2 - Convert.ToInt32(txtCifrasSignif.Text))) + "";
             }
         }

@@ -133,61 +133,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
         {
             return Math.Abs((valorAproximado - valorAnterior) / valorAproximado) * 100.0;
         }
-
-        public static List<FalsaPosicion> falsaPosicion(string expresion, double xl, double xu, double valorVerdadero, double errorTolerancia, bool hayValorVerdadero)
-        {
-            int iteracion = 0;
-            double intervalo = 0;
-            double xr = 0;
-            double xrAnt = 0;
-            double fxl = 0;
-            double fxu = 0;
-            double fxr = 0;
-            double fxlfxr = 0;
-            double errorAprox = 0;
-            double errorVerd = 0;
-            bool ea_menor_es = false;
-            FalsaPosicion falsaPos = null;
-            List<FalsaPosicion> listaFalsaPos = new List<FalsaPosicion>();
-
-            do
-            {
-                iteracion++;
-                intervalo = xu - xl;
-                xrAnt = xr;
-
-                fxl = evaluarFuncion(expresion, xl);
-                fxu = evaluarFuncion(expresion, xu);
-                fxr = evaluarFuncion(expresion, xr);
-
-                xr = xu - (fxu * (xl - xu)) / (fxl - fxu);
-
-                fxlfxr = fxl * fxr;
-                if(hayValorVerdadero)
-                    errorVerd = calcularErrorVerdadero(valorVerdadero, xr);
-
-                if (iteracion > 1)
-                {
-                    errorAprox = calcularErrorAproximacion(xr, xrAnt);
-                    if (errorAprox < errorTolerancia)
-                        ea_menor_es = true;
-                }
-
-                if (hayValorVerdadero)
-                    falsaPos = new FalsaPosicion(iteracion, intervalo, xl, xu, xr, fxl, fxu, fxr, fxlfxr, errorVerd, errorAprox);
-                else
-                    falsaPos = new FalsaPosicion(iteracion, intervalo, xl, xu, xr, fxl, fxu, fxr, fxlfxr, 0, errorAprox);
-                listaFalsaPos.Add(falsaPos);
-
-                if (fxlfxr < 0)
-                    xu = xr;
-                if (fxlfxr > 0)
-                    xl = xr;
-
-            } while (!ea_menor_es);
-
-            return listaFalsaPos;
-        }
+   
 
         public static double evaluarFuncion(string expresion, double x)
         {
@@ -296,73 +242,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             return listaNewtonRaphson;
         }
 
-        public static List<Muller> muller(string expresion, double x0, double x1, double x2, double valorVerdadero, double errorTolerancia, bool hayValorVerdadero)
-        {
-            int iteracion = 0;
-            double h0 = 0;
-            double h1 = 0;
-            double s0 = 0;
-            double s1 = 0;
-            double fx0 = 0;
-            double fx1 = 0;
-            double fx2 = 0;
-            double a = 0;
-            double b = 0;
-            double c = 0;
-            double signoP = 0;
-            double signoN = 0;
-            double x3 = 0;
-            double errorAprox = 0;
-            double errorVerd = 0;
-
-            Muller muller = null;
-            List<Muller> listaMuller = new List<Muller>();
-
-            do
-            {
-                iteracion++;
-
-                fx0 = evaluarFuncion(expresion, x0);
-                fx1 = evaluarFuncion(expresion, x1);
-                fx2 = evaluarFuncion(expresion, x2);
-
-                h0 = x1 - x0;
-                h1 = x2 - x1;
-
-                s0 = (fx1 - fx0) / h0;
-                s1 = (fx2 - fx1) / h1;
-
-                a = (s1 - s0) / (h0 + h1);
-                b = s1 + h1 * a;
-                c = fx2;
-
-                signoP = b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c);
-                signoN = b - Math.Sqrt(Math.Pow(b, 2) - 4 * a * c);
-
-                if (Math.Abs(signoP) > Math.Abs(signoN))
-                    x3 = x2 + (-2 * c) / signoP;
-                else
-                    x3 = x2 + (-2 * c) / signoN;
-
-                if(hayValorVerdadero)
-                    errorVerd = calcularErrorVerdadero(valorVerdadero, x3);
-                errorAprox = calcularErrorAproximacion(x3, x2);
-
-                x0 = x1;
-                x1 = x2;
-                x2 = x3;
-
-                if(hayValorVerdadero)
-                    muller = new Muller(iteracion, x2, fx0, fx1, fx2, h0, h1, s0, s1, a, b, c, signoP, signoN, x3, errorVerd, errorAprox);
-                else
-                    muller = new Muller(iteracion, x2, fx0, fx1, fx2, h0, h1, s0, s1, a, b, c, signoP, signoN, x3, 0, errorAprox);
-
-                listaMuller.Add(muller);
-
-            } while (errorAprox > errorTolerancia);
-
-            return listaMuller;
-        }
+        
 
         public static List<Secante> secante(string expresion, double x0, double x1, double valorVerdadero, double errorTolerancia, bool hayValorVverdadero)
         {
@@ -661,10 +541,52 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 yt = evaluarFuncion(solucionAnalitica, xi);
                 et = ((yt - yrk) / yt) * 100.0;
 
-                puntoMedio = new PuntoMedio(iteracion, xi, yrk, k1, k2, yt, et);
+                //puntoMedio = new PuntoMedio(iteracion, xi, yrk, k1, k2, yt, et);
                 listaPuntoMedio.Add(puntoMedio);
 
                 iteracion = iteracion + 1;
+            }
+
+            return listaPuntoMedio;
+        }
+        public static List<PuntoMedio> puntoMedio2(string expresion, string solucionAnalitica,
+            double a, double b, double h, double x0, double y0)
+        {
+            List<PuntoMedio> listaPuntoMedio = new List<PuntoMedio>();
+            PuntoMedio puntoMedio = null;           
+             int iteracion = 0;
+            double xi = x0;
+            double k1 = 0;
+            double y0i = 0;
+            double k2 = 0;
+            double ypuntoMedio = y0;
+            double yt = 0;
+            double errorGlobal = 0;
+
+            while (xi < b)
+            {
+                if (iteracion == 0)
+                {
+                    xi = x0;
+                    ypuntoMedio = y0;
+                    puntoMedio = new PuntoMedio(iteracion, xi, k1, y0i, k2, ypuntoMedio,yt, errorGlobal);
+                    listaPuntoMedio.Add(puntoMedio);                    
+                }
+                else
+                {
+                                                                                               
+                    k1 = calcularK(expresion, xi, ypuntoMedio);// revisar calcular despues
+                    y0i = ypuntoMedio + k1 * h;                    
+                    xi += h;
+                    k2 = calcularK(expresion, xi, y0i);
+                    ypuntoMedio = ypuntoMedio + k2 * h;                   
+                    yt = evaluarFuncion(solucionAnalitica, xi);
+                    errorGlobal = yt - ypuntoMedio;
+
+                    puntoMedio = new PuntoMedio(iteracion, xi, k1, y0i, k2, ypuntoMedio, yt, errorGlobal);
+                    listaPuntoMedio.Add(puntoMedio);                    
+                }
+                iteracion += 1;
             }
 
             return listaPuntoMedio;

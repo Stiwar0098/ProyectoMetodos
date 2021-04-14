@@ -3,8 +3,7 @@ using System;
 using System.Windows.Forms;
 
 namespace ProyectoMetodosNumericos.Formularios
-{
-    public partial class frmPrincipal : Form
+{    public partial class frmPrincipal : Form
     {
         public frmPrincipal()
         {
@@ -19,8 +18,7 @@ namespace ProyectoMetodosNumericos.Formularios
 
         private void falsaPosiciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmFalsaPosicion ffp = new frmFalsaPosicion();
-            Algoritmos.Algoritmos.addFormulario(panel1, ffp);
+          
         }
 
         private void newtonRaphsonToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,8 +35,7 @@ namespace ProyectoMetodosNumericos.Formularios
 
         private void müllerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMuller fm = new frmMuller();
-            Algoritmos.Algoritmos.addFormulario(panel1, fm);
+           
         }
 
         private void reglaDelTrapecioMùltipleToolStripMenuItem_Click(object sender, EventArgs e)
