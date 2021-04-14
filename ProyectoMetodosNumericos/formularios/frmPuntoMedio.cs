@@ -49,20 +49,22 @@ namespace ProyectoMetodosNumericos.Formularios
                 dataGridView1.DataSource = listaPuntoMedio.Select(lt => new {
                     Iteración = lt.Iteracion,
                     Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
-                    yrk = Algoritmos.Algoritmos.toCifraSignif(lt.Yrk, cifrasSignif),
                     k1 = Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
+                    y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
                     k2 = Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
+                    yPuntoMedio = Algoritmos.Algoritmos.toCifraSignif(lt.YpuntoMedio, cifrasSignif),
                     yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),
-                    Error_Verdadero = Algoritmos.Algoritmos.toCifraSignif(lt.Et, cifrasSignif) + "%",
+                    ErrorGlobal = Algoritmos.Algoritmos.toCifraSignif(lt.ErrorGlobal, cifrasSignif) + "%",
                 }).ToList();
             }
             dataGridView1.DataSource = listaPuntoMedio.Select(lt => new {
                 Iteración = lt.Iteracion,
                 Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
-                yrk = Algoritmos.Algoritmos.toCifraSignif(lt.Yrk, cifrasSignif),
                 k1 = Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
+                y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
                 k2 = Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
-                yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),
+                yPuntoMedio = Algoritmos.Algoritmos.toCifraSignif(lt.YpuntoMedio, cifrasSignif),
+                yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),                
             }).ToList();
         }
 
@@ -145,7 +147,7 @@ namespace ProyectoMetodosNumericos.Formularios
                 if (!hayErrores)
                 {
                     //Llama al método de Heun
-                    listaPuntoMedio = Algoritmos.Algoritmos.puntoMedio(expresion, solucionAnalitica, a, b, h, x0, y0);
+                    listaPuntoMedio = Algoritmos.Algoritmos.puntoMedio2(expresion, solucionAnalitica, a, b, h, x0, y0);
 
                     //MUESTRO DATOS
                     mostrarDatosEnTabla(cifrasSignif, hayValorVerdadero);

@@ -56,9 +56,7 @@
     <Compile Include="algoritmos\Validaciones.cs" />
     <Compile Include="controladores\TLista.cs" />
     <Compile Include="entidades\Biseccion.cs" />
-    <Compile Include="entidades\FalsaPosicion.cs" />
     <Compile Include="entidades\Heun.cs" />
-    <Compile Include="entidades\Muller.cs" />
     <Compile Include="entidades\NewtonRaphson.cs" />
     <Compile Include="entidades\PuntoMedio.cs" />
     <Compile Include="entidades\RK_CuartoOrden.cs" />
