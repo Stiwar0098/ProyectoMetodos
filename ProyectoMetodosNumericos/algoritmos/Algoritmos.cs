@@ -494,8 +494,8 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 //k4 = calcularK(expresion, xAux, yAux);
                 k4 = 2 * xAux + yAux;
 
-                //yt = evaluarFuncion(solucionAnalitica, xi);
-                yt = Math.Exp(Math.Pow(-xi, 2));
+                yt = evaluarFuncion(solucionAnalitica, xi);
+                //yt = Math.Exp(Math.Pow(-xi, 2));
                 et = (yt - yrk);
 
                 rkCuartoOrden = new RK_CuartoOrden(iteracion, xi, yrk, k1, k2, k3, k4, yt, et);
