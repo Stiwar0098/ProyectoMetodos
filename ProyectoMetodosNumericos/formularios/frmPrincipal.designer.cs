@@ -65,14 +65,14 @@
             this.métodosAbiertosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bisecciónToolStripMenuItem});
             this.métodosAbiertosToolStripMenuItem.Name = "métodosAbiertosToolStripMenuItem";
-            this.métodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
-            this.métodosAbiertosToolStripMenuItem.Text = "Métodos Abiertos";
+            this.métodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.métodosAbiertosToolStripMenuItem.Text = "Métodos Cerrados";
             this.métodosAbiertosToolStripMenuItem.Click += new System.EventHandler(this.métodosAbiertosToolStripMenuItem_Click);
             // 
             // bisecciónToolStripMenuItem
             // 
             this.bisecciónToolStripMenuItem.Name = "bisecciónToolStripMenuItem";
-            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.bisecciónToolStripMenuItem.Text = "Bisección";
             this.bisecciónToolStripMenuItem.Click += new System.EventHandler(this.bisecciónToolStripMenuItem_Click);
             // 
@@ -82,8 +82,8 @@
             this.newtonRaphsonToolStripMenuItem,
             this.secanteToolStripMenuItem});
             this.métodosCerradosToolStripMenuItem.Name = "métodosCerradosToolStripMenuItem";
-            this.métodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
-            this.métodosCerradosToolStripMenuItem.Text = "Métodos Cerrados";
+            this.métodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.métodosCerradosToolStripMenuItem.Text = "Métodos Abiertos";
             // 
             // newtonRaphsonToolStripMenuItem
             // 
