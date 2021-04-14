@@ -29,7 +29,6 @@ namespace ProyectoMetodosNumericos.Formularios
             errorProvider.Clear();
             txtEs.Clear();
             txtExpresion.Clear();
-            txtVv.Clear();
             txtX1.Clear();
             txtX0.Clear();
             cmbCifras.SelectedIndex = -1;
@@ -73,14 +72,7 @@ namespace ProyectoMetodosNumericos.Formularios
             string expresion = null;
 
             bool hayValorVerdadero = true;
-            if (string.IsNullOrEmpty(txtVv.Text))
-                hayValorVerdadero = false;
-            else
-            {
-                valorVerd = Convert.ToDouble(txtVv.Text);
-                if (valorVerd == 0)
-                    hayValorVerdadero = false;
-            }
+            
 
             if (datosLlenos())
             {
@@ -168,6 +160,11 @@ namespace ProyectoMetodosNumericos.Formularios
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtX0_TextChanged(object sender, EventArgs e)
         {
 
         }
