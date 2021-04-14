@@ -31,11 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.métodosAbiertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bisecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.falsaPosiciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.métodosCerradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newtonRaphsonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.müllerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cudraturaDeGaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reglaDelTrapecioMùltipleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gaussLegendreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,8 +63,7 @@
             // métodosAbiertosToolStripMenuItem
             // 
             this.métodosAbiertosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bisecciónToolStripMenuItem,
-            this.falsaPosiciónToolStripMenuItem});
+            this.bisecciónToolStripMenuItem});
             this.métodosAbiertosToolStripMenuItem.Name = "métodosAbiertosToolStripMenuItem";
             this.métodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.métodosAbiertosToolStripMenuItem.Text = "Métodos Abiertos";
@@ -74,23 +71,15 @@
             // bisecciónToolStripMenuItem
             // 
             this.bisecciónToolStripMenuItem.Name = "bisecciónToolStripMenuItem";
-            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.bisecciónToolStripMenuItem.Text = "Bisección";
             this.bisecciónToolStripMenuItem.Click += new System.EventHandler(this.bisecciónToolStripMenuItem_Click);
-            // 
-            // falsaPosiciónToolStripMenuItem
-            // 
-            this.falsaPosiciónToolStripMenuItem.Name = "falsaPosiciónToolStripMenuItem";
-            this.falsaPosiciónToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.falsaPosiciónToolStripMenuItem.Text = "Falsa Posición";
-            this.falsaPosiciónToolStripMenuItem.Click += new System.EventHandler(this.falsaPosiciónToolStripMenuItem_Click);
             // 
             // métodosCerradosToolStripMenuItem
             // 
             this.métodosCerradosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newtonRaphsonToolStripMenuItem,
-            this.secanteToolStripMenuItem,
-            this.müllerToolStripMenuItem});
+            this.secanteToolStripMenuItem});
             this.métodosCerradosToolStripMenuItem.Name = "métodosCerradosToolStripMenuItem";
             this.métodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
             this.métodosCerradosToolStripMenuItem.Text = "Métodos Cerrados";
@@ -108,13 +97,6 @@
             this.secanteToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
             this.secanteToolStripMenuItem.Text = "Secante";
             this.secanteToolStripMenuItem.Click += new System.EventHandler(this.secanteToolStripMenuItem_Click);
-            // 
-            // müllerToolStripMenuItem
-            // 
-            this.müllerToolStripMenuItem.Name = "müllerToolStripMenuItem";
-            this.müllerToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
-            this.müllerToolStripMenuItem.Text = "Müller";
-            this.müllerToolStripMenuItem.Click += new System.EventHandler(this.müllerToolStripMenuItem_Click);
             // 
             // cudraturaDeGaussToolStripMenuItem
             // 
@@ -206,11 +188,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem métodosAbiertosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bisecciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem falsaPosiciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem métodosCerradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newtonRaphsonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem secanteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem müllerToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem cudraturaDeGaussToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reglaDelTrapecioMùltipleToolStripMenuItem;
