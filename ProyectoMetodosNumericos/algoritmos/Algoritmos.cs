@@ -395,46 +395,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             return valorAprox;
         }
             
-        public static List<Heun> heun(string expresion, string solucionAnalitica, 
-            double a, double b, double h, double x0, double y0)
-        {
-            List<Heun> listaHeun = new List<Heun>();
-            Heun heun = null;
-            Calculo funcion = new Calculo();
-            int iteracion = 0;
-            double xi = x0;
-            double fxiyi = 0;
-            double y0i = y0;
-            double fxiy0i = 0;
-            double yHeun = y0;
-            double yt = evaluarFuncion(solucionAnalitica, xi);
-            double et = 0;
-            double ea = 0;
-            string expresionConY = null;
-
-            //heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
-            listaHeun.Add(heun);
-
-            while (xi < b)
-            {
-                iteracion = iteracion + 1;
-                xi = listaHeun[iteracion - 1].Xi + h;
-                fxiyi = evaluarFuncion(expresion, listaHeun[iteracion-1].Xi);
-                y0i = listaHeun[iteracion - 1].YHeun + fxiyi * h;
-                expresionConY = expresion.Replace("y", y0i.ToString());
-                fxiy0i = evaluarFuncion(expresionConY, xi);
-                yHeun = listaHeun[iteracion - 1].YHeun + (fxiyi + fxiy0i) / 2 * h;
-                yt = evaluarFuncion(solucionAnalitica, xi);
-                et = (yt - yHeun) / yt;
-                ea = calcularErrorAproximacion(yHeun, listaHeun[iteracion-1].YHeun);
-
-                //heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
-                listaHeun.Add(heun);
-            }
-
-            return listaHeun;
-        }
-
+        
         public static double calcularK(string expresion, double x, double y)
         {
             double result = 0;
