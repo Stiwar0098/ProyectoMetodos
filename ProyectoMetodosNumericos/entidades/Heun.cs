@@ -10,39 +10,36 @@ namespace ProyectoMetodosNumericos.entidades
     {
         private int iteracion;
         private double xi;
-        private double fxiyi;
+        private double k1;
         private double y0i;
-        private double fxiy0i;
+        private double k2;
         private double yHeun;
         private double yt;
-        private double et;
-        private double ea;
+        private double errorGlobal;
 
         public Heun()
         {
         }
 
-        public Heun(int iteracion, double xi, double fxiyi, double y0i, double fxiy0i, double yHeun, double yt, double et, double ea)
+        public Heun(int iteracion, double xi, double k1, double y0i, double k2, double yHeun, double yt, double errorGlobal)
         {
             this.iteracion = iteracion;
             this.xi = xi;
-            this.fxiyi = fxiyi;
+            this.k1 = k1;
             this.y0i = y0i;
-            this.fxiy0i = fxiy0i;
+            this.k2 = k2;
             this.yHeun = yHeun;
             this.yt = yt;
-            this.et = et;
-            this.ea = ea;
+            this.errorGlobal = errorGlobal;
         }
 
         public int Iteracion { get => iteracion; set => iteracion = value; }
         public double Xi { get => xi; set => xi = value; }
-        public double Fxiyi { get => fxiyi; set => fxiyi = value; }
+        public double K1 { get => k1; set => k1 = value; }
         public double Y0i { get => y0i; set => y0i = value; }
-        public double Fxiy0i { get => fxiy0i; set => fxiy0i = value; }
+        public double K2 { get => k2; set => k2 = value; }
         public double YHeun { get => yHeun; set => yHeun = value; }
         public double Yt { get => yt; set => yt = value; }
-        public double Et { get => et; set => et = value; }
-        public double Ea { get => ea; set => ea = value; }
+        public double ErrorGlobal { get => errorGlobal; set => errorGlobal = value; }
     }
 }

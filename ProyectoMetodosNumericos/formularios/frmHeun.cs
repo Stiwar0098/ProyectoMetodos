@@ -64,13 +64,12 @@ namespace ProyectoMetodosNumericos.Formularios
                 dataGridView1.DataSource = listaHeun.Select(lt => new {
                     Iteración = lt.Iteracion,
                     Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
-                    fxiyi = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Fxiyi, cifrasSignif),
+                    k1 = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
                     y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
-                    fxiy0i = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Fxiy0i, cifrasSignif),
+                    k2 = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
                     yHeun = Algoritmos.Algoritmos.toCifraSignif(lt.YHeun, cifrasSignif),
                     yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),
-                    Error_Verdadero = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Et, cifrasSignif) + "%",
-                    Error_de_Aproximación = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Ea, cifrasSignif) + "%"
+                    Error_Global = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.ErrorGlobal, cifrasSignif) + "%",                    
                 }).ToList();
             }
             else
@@ -78,12 +77,12 @@ namespace ProyectoMetodosNumericos.Formularios
                 dataGridView1.DataSource = listaHeun.Select(lt => new {
                     Iteración = lt.Iteracion,
                     Xi = Algoritmos.Algoritmos.toCifraSignif(lt.Xi, cifrasSignif),
-                    fxiyi = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Fxiyi, cifrasSignif),
+                    k1 = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.K1, cifrasSignif),
                     y0i = Algoritmos.Algoritmos.toCifraSignif(lt.Y0i, cifrasSignif),
-                    fxiy0i = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Fxiy0i, cifrasSignif),
+                    k2 = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.K2, cifrasSignif),
                     yHeun = Algoritmos.Algoritmos.toCifraSignif(lt.YHeun, cifrasSignif),
                     yt = Algoritmos.Algoritmos.toCifraSignif(lt.Yt, cifrasSignif),
-                    Error_de_Aproximación = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.Ea, cifrasSignif) + "%"
+                    Error_Global = lt.Iteracion == 0 ? " - " : Algoritmos.Algoritmos.toCifraSignif(lt.ErrorGlobal, cifrasSignif) + "%",
                 }).ToList();
             }
         }
@@ -153,7 +152,7 @@ namespace ProyectoMetodosNumericos.Formularios
                 if (!hayErrores)
                 {
                     //Llama al método de Heun
-                    listaHeun = Algoritmos.Algoritmos.heun(expresion, solucionAnalitica, a, b, h, x0, y0);
+                    listaHeun = Algoritmos.Algoritmos.heun2(expresion, solucionAnalitica, a, b, h, x0, y0);
 
                     //MUESTRO DATOS
                     mostrarDatosEnTabla(cifrasSignif, hayValorVerdadero);

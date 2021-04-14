@@ -67,11 +67,12 @@
             this.métodosAbiertosToolStripMenuItem.Name = "métodosAbiertosToolStripMenuItem";
             this.métodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.métodosAbiertosToolStripMenuItem.Text = "Métodos Abiertos";
+            this.métodosAbiertosToolStripMenuItem.Click += new System.EventHandler(this.métodosAbiertosToolStripMenuItem_Click);
             // 
             // bisecciónToolStripMenuItem
             // 
             this.bisecciónToolStripMenuItem.Name = "bisecciónToolStripMenuItem";
-            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.bisecciónToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.bisecciónToolStripMenuItem.Text = "Bisección";
             this.bisecciónToolStripMenuItem.Click += new System.EventHandler(this.bisecciónToolStripMenuItem_Click);
             // 
@@ -175,7 +176,6 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Metodos Numéricos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
