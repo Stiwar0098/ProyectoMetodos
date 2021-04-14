@@ -101,7 +101,7 @@
             // 
             this.txtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtn.Location = new System.Drawing.Point(621, 31);
+            this.txtn.Location = new System.Drawing.Point(762, 31);
             this.txtn.Name = "txtn";
             this.txtn.Size = new System.Drawing.Size(49, 24);
             this.txtn.TabIndex = 5;
@@ -112,7 +112,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(586, 34);
+            this.label2.Location = new System.Drawing.Point(727, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 20);
             this.label2.TabIndex = 25;
@@ -139,7 +139,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(11, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(699, 136);
+            this.groupBox1.Size = new System.Drawing.Size(840, 136);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información:";
@@ -149,7 +149,7 @@
             this.lblErrorVerdT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblErrorVerdT.AutoSize = true;
             this.lblErrorVerdT.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorVerdT.Location = new System.Drawing.Point(458, 97);
+            this.lblErrorVerdT.Location = new System.Drawing.Point(599, 97);
             this.lblErrorVerdT.Name = "lblErrorVerdT";
             this.lblErrorVerdT.Size = new System.Drawing.Size(21, 20);
             this.lblErrorVerdT.TabIndex = 18;
@@ -177,7 +177,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifrasSignif.Location = new System.Drawing.Point(518, 31);
+            this.cmbCifrasSignif.Location = new System.Drawing.Point(589, 31);
             this.cmbCifrasSignif.Name = "cmbCifrasSignif";
             this.cmbCifrasSignif.Size = new System.Drawing.Size(51, 26);
             this.cmbCifrasSignif.TabIndex = 4;
@@ -187,7 +187,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(318, 34);
+            this.label11.Location = new System.Drawing.Point(389, 34);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(194, 20);
             this.label11.TabIndex = 34;
@@ -198,7 +198,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(449, 70);
+            this.label9.Location = new System.Drawing.Point(520, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 20);
             this.label9.TabIndex = 17;
@@ -218,7 +218,7 @@
             this.lblValorAproxT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblValorAproxT.AutoSize = true;
             this.lblValorAproxT.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorAproxT.Location = new System.Drawing.Point(224, 100);
+            this.lblValorAproxT.Location = new System.Drawing.Point(295, 100);
             this.lblValorAproxT.Name = "lblValorAproxT";
             this.lblValorAproxT.Size = new System.Drawing.Size(14, 20);
             this.lblValorAproxT.TabIndex = 16;
@@ -239,7 +239,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(224, 70);
+            this.label7.Location = new System.Drawing.Point(295, 70);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 20);
             this.label7.TabIndex = 15;
@@ -252,7 +252,7 @@
             this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpresion.Location = new System.Drawing.Point(145, 69);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(565, 24);
+            this.txtExpresion.Size = new System.Drawing.Size(706, 24);
             this.txtExpresion.TabIndex = 0;
             // 
             // errorProvider1
@@ -301,9 +301,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(11, 6);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(683, 57);
+            this.panel1.Size = new System.Drawing.Size(881, 64);
             this.panel1.TabIndex = 43;
             // 
             // pictureBox1
@@ -321,9 +321,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 9);
+            this.label1.Location = new System.Drawing.Point(152, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(627, 48);
+            this.label1.Size = new System.Drawing.Size(612, 48);
             this.label1.TabIndex = 32;
             this.label1.Text = "Método de Trapecio (Aplicación Múltiple)";
             // 
@@ -332,7 +332,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(740, 350);
+            this.ClientSize = new System.Drawing.Size(881, 350);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAplicarMetodo);
             this.Controls.Add(this.btnNuevo);
@@ -340,7 +340,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtExpresion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(740, 350);
             this.MinimumSize = new System.Drawing.Size(740, 350);
             this.Name = "frmTrapecioMultiple";
             this.Text = "Método de Trapecio (Múltiple Aplicación)";

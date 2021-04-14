@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPuntoMedio));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbCifrasSignif = new System.Windows.Forms.ComboBox();
@@ -66,6 +66,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cmbCifrasSignif);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label12);
@@ -81,7 +82,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(14, 148);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 106);
+            this.groupBox1.Size = new System.Drawing.Size(678, 106);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos :";
@@ -109,7 +110,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifrasSignif.Location = new System.Drawing.Point(471, 67);
+            this.cmbCifrasSignif.Location = new System.Drawing.Point(608, 67);
             this.cmbCifrasSignif.Name = "cmbCifrasSignif";
             this.cmbCifrasSignif.Size = new System.Drawing.Size(51, 26);
             this.cmbCifrasSignif.TabIndex = 4;
@@ -119,7 +120,7 @@
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(304, 69);
+            this.label11.Location = new System.Drawing.Point(441, 69);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(161, 20);
             this.label11.TabIndex = 34;
@@ -130,7 +131,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(150, 31);
+            this.label12.Location = new System.Drawing.Point(219, 31);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 20);
             this.label12.TabIndex = 30;
@@ -150,7 +151,7 @@
             // 
             this.txth.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txth.Location = new System.Drawing.Point(205, 64);
+            this.txth.Location = new System.Drawing.Point(274, 64);
             this.txth.Name = "txth";
             this.txth.Size = new System.Drawing.Size(88, 24);
             this.txth.TabIndex = 6;
@@ -160,7 +161,7 @@
             // 
             this.txtYo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtYo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYo.Location = new System.Drawing.Point(365, 31);
+            this.txtYo.Location = new System.Drawing.Point(502, 31);
             this.txtYo.Name = "txtYo";
             this.txtYo.Size = new System.Drawing.Size(79, 24);
             this.txtYo.TabIndex = 5;
@@ -180,7 +181,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(164, 66);
+            this.label5.Location = new System.Drawing.Point(233, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 20);
             this.label5.TabIndex = 32;
@@ -190,7 +191,7 @@
             // 
             this.txtXo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtXo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtXo.Location = new System.Drawing.Point(205, 31);
+            this.txtXo.Location = new System.Drawing.Point(274, 31);
             this.txtXo.Name = "txtXo";
             this.txtXo.Size = new System.Drawing.Size(88, 24);
             this.txtXo.TabIndex = 4;
@@ -210,7 +211,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(316, 34);
+            this.label10.Location = new System.Drawing.Point(453, 34);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(39, 20);
             this.label10.TabIndex = 32;
@@ -231,9 +232,9 @@
             this.txtSolucionAnalitica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSolucionAnalitica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSolucionAnalitica.Location = new System.Drawing.Point(175, 108);
+            this.txtSolucionAnalitica.Location = new System.Drawing.Point(166, 108);
             this.txtSolucionAnalitica.Name = "txtSolucionAnalitica";
-            this.txtSolucionAnalitica.Size = new System.Drawing.Size(565, 24);
+            this.txtSolucionAnalitica.Size = new System.Drawing.Size(702, 24);
             this.txtSolucionAnalitica.TabIndex = 1;
             // 
             // txtExpresion
@@ -243,7 +244,7 @@
             this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpresion.Location = new System.Drawing.Point(139, 78);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(601, 24);
+            this.txtExpresion.Size = new System.Drawing.Size(729, 24);
             this.txtExpresion.TabIndex = 0;
             // 
             // label4
@@ -264,15 +265,15 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 260);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 266);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 262);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Size = new System.Drawing.Size(856, 262);
             this.dataGridView1.TabIndex = 49;
             // 
             // label2
@@ -290,7 +291,7 @@
             this.btnAplicarMetodo.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnAplicarMetodo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAplicarMetodo.ForeColor = System.Drawing.Color.White;
-            this.btnAplicarMetodo.Location = new System.Drawing.Point(561, 164);
+            this.btnAplicarMetodo.Location = new System.Drawing.Point(710, 164);
             this.btnAplicarMetodo.Name = "btnAplicarMetodo";
             this.btnAplicarMetodo.Size = new System.Drawing.Size(155, 35);
             this.btnAplicarMetodo.TabIndex = 47;
@@ -303,7 +304,7 @@
             this.btnNuevo.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(561, 212);
+            this.btnNuevo.Location = new System.Drawing.Point(710, 207);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(155, 35);
             this.btnNuevo.TabIndex = 48;
@@ -323,7 +324,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 61);
+            this.panel1.Size = new System.Drawing.Size(877, 61);
             this.panel1.TabIndex = 52;
             // 
             // label1
@@ -331,7 +332,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(61, 12);
+            this.label1.Location = new System.Drawing.Point(67, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(667, 39);
             this.label1.TabIndex = 35;
@@ -353,7 +354,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 540);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(877, 540);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSolucionAnalitica);
