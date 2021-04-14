@@ -7,7 +7,7 @@ namespace ProyectoMetodosNumericos.Formularios
     {
         public frmPrincipal()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void bisecciónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,7 +70,8 @@ namespace ProyectoMetodosNumericos.Formularios
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            frmBiseccion fb = new frmBiseccion();
+            Algoritmos.Algoritmos.addFormulario(panel1, fb);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
