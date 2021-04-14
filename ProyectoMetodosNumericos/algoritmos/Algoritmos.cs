@@ -571,7 +571,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
         {
             List<RK_CuartoOrden> listaRK = new List<RK_CuartoOrden>();
             RK_CuartoOrden rkCuartoOrden = null;
-
+            
             int iteracion = 0;
             double xi = 0;
             double yrk = 0;
@@ -591,11 +591,13 @@ namespace ProyectoMetodosNumericos.Algoritmos
                     xi = x0;
                     yrk = y0;
                 }
-                else
+                else 
                 {
                     xi = xi + h;
-                    yrk = yrk + 1 / 6 * (k1 + 2 * k2 + 2 * k3 + k4) * h;
+                    yrk = yrk + (1 / 6) * (k1 + 2 * k2 + 2 * k3 + k4) * h;
                 }
+                    
+                
 
                 k1 = calcularK(expresion, xi, yrk);
 
@@ -611,7 +613,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 k4 = calcularK(expresion, xAux, yAux);
 
                 yt = evaluarFuncion(solucionAnalitica, xi);
-                et = ((yt - yrk) / yt) * 100.0;
+                et = (yt - yrk);
 
                 rkCuartoOrden = new RK_CuartoOrden(iteracion, xi, yrk, k1, k2, k3, k4, yt, et);
                 listaRK.Add(rkCuartoOrden);
