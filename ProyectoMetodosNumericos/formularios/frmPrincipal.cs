@@ -3,8 +3,7 @@ using System;
 using System.Windows.Forms;
 
 namespace ProyectoMetodosNumericos.Formularios
-{
-    public partial class frmPrincipal : Form
+{    public partial class frmPrincipal : Form
     {
         public frmPrincipal()
         {

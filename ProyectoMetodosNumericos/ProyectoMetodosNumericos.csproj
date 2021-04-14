@@ -69,12 +69,6 @@
     <Compile Include="Formularios\frmBiseccion.designer.cs">
       <DependentUpon>frmBiseccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmFalsaPosicion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFalsaPosicion.designer.cs">
-      <DependentUpon>frmFalsaPosicion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmGaussLegendre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +80,6 @@
     </Compile>
     <Compile Include="Formularios\frmHeun.designer.cs">
       <DependentUpon>frmHeun.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmMuller.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmMuller.designer.cs">
-      <DependentUpon>frmMuller.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmNewtonRaphson.cs">
       <SubType>Form</SubType>
@@ -134,17 +122,11 @@
     <EmbeddedResource Include="Formularios\frmBiseccion.resx">
       <DependentUpon>frmBiseccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFalsaPosicion.resx">
-      <DependentUpon>frmFalsaPosicion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmGaussLegendre.resx">
       <DependentUpon>frmGaussLegendre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmHeun.resx">
       <DependentUpon>frmHeun.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmMuller.resx">
-      <DependentUpon>frmMuller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmNewtonRaphson.resx">
       <DependentUpon>frmNewtonRaphson.cs</DependentUpon>
