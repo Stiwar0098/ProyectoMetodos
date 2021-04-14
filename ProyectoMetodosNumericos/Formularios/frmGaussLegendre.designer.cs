@@ -181,11 +181,11 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(362, 33);
+            this.label11.Location = new System.Drawing.Point(310, 33);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 20);
+            this.label11.Size = new System.Drawing.Size(222, 20);
             this.label11.TabIndex = 34;
-            this.label11.Text = "Cifras Significativas =\r\n";
+            this.label11.Text = "Cifras significativas a motrar=";
             // 
             // label9
             // 

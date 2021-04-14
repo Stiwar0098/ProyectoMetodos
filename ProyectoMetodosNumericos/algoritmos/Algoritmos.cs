@@ -435,28 +435,27 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 else 
                 {
                     xi = xi + h;
-                    yrk = yrk + 0.16666666666666666666666666666667 * (k1 + 2 * k2 + 2 * k3 + k4) * h;
+                    yrk = yrk + (1.0/6.0) * (k1 + 2 * k2 + 2 * k3 + k4) * h;
 
-                }
-                //k1 = calcularK(expresion, xi, yrk);
+                }                
                 k1 = 2 * xi + yrk;
 
                 xAux = xi + h / 2.0;
                 yAux = yrk + k1 * h / 2.0;
-                //k2 = calcularK(expresion, xAux, yAux);
+                
                 k2 = 2 * xAux + yAux;
 
                 yAux = yrk + k2 * h / 2.0;
-                //k3 = calcularK(expresion, xAux, yAux);
+                
                 k3 = 2 * xAux + yAux;
 
                 xAux = xi + h;
                 yAux = yrk + k3 * h;
-                //k4 = calcularK(expresion, xAux, yAux);
+                
                 k4 = 2 * xAux + yAux;
 
                 yt = evaluarFuncion(solucionAnalitica, xi);
-                //yt = Math.Exp(Math.Pow(-xi, 2));
+                
                 et = (yt - yrk);
 
                 rkCuartoOrden = new RK_CuartoOrden(iteracion, xi, yrk, k1, k2, k3, k4, yt, et);
@@ -494,9 +493,9 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 else
                 {                                
                     k1 = calcularK(expresion, xi, ypuntoMedio);// revisar calcular despues
-                    y0i = ypuntoMedio + 0.5*k1* h;                    
+                    y0i = ypuntoMedio + (1.0/2.0)*k1* h;                    
                     xi += h;
-                    xi2 = xi + 0.5 * h;
+                    xi2 = xi + (1.0 / 2.0) * h;
                     k2 = calcularK(expresion, xi2, y0i);
 
                     ypuntoMedio = ypuntoMedio + k2 * h;                   

@@ -109,7 +109,7 @@ namespace ProyectoMetodosNumericos.Formularios
             string solucionAnalitica = null;
             double y0 = 0;
             bool hayErrores = false;
-            bool hayValorVerdadero = false;
+            bool hayValorVerdadero = true;
 
             Calculo funcion = new Calculo();
 

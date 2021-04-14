@@ -234,7 +234,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifras.Location = new System.Drawing.Point(288, 154);
+            this.cmbCifras.Location = new System.Drawing.Point(241, 154);
             this.cmbCifras.Name = "cmbCifras";
             this.cmbCifras.Size = new System.Drawing.Size(51, 28);
             this.cmbCifras.TabIndex = 5;
@@ -247,9 +247,9 @@
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(13, 157);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(269, 20);
+            this.label11.Size = new System.Drawing.Size(222, 20);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Cantidad de Decimales a Mostrar =\r\n";
+            this.label11.Text = "Cifras significativas a motrar=";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // lblEa
