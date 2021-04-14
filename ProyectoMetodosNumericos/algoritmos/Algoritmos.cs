@@ -412,7 +412,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             double ea = 0;
             string expresionConY = null;
 
-            heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
+            //heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
             listaHeun.Add(heun);
 
             while (xi < b)
@@ -428,7 +428,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 et = (yt - yHeun) / yt;
                 ea = calcularErrorAproximacion(yHeun, listaHeun[iteracion-1].YHeun);
 
-                heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
+                //heun = new Heun(iteracion, xi, fxiyi, y0i, fxiy0i, yHeun, yt, et, ea);
                 listaHeun.Add(heun);
             }
 
@@ -505,53 +505,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
             }
 
             return listaRK;
-        }
-
-        public static List<PuntoMedio> puntoMedio(string expresion, string solucionAnalitica, 
-            double a, double b, double h, double x0, double y0)
-        {
-            List<PuntoMedio> listaPuntoMedio = new List<PuntoMedio>();
-            PuntoMedio puntoMedio = null;
-            int iteracion = 0;
-            double xi = 0;
-            double yrk = 0;
-            double k1 = 0;
-            double k2 = 0;
-            double yt = 0;
-            double et = 0;
-            double xAux = 0;
-            double yAux = 0;
-
-            while (xi < b)
-            {
-                if(iteracion == 0)
-                {
-                    xi = x0;
-                    yrk = y0;
-                }
-                else
-                {
-                    xi = xi + h;
-                    yrk = yrk + k1 * h;
-                }
-
-                k1 = calcularK(expresion, xi, yrk);
-
-                xAux = xi + h / 2.0;
-                yAux = yrk + k1 * h / 2.0;
-                k2 = calcularK(expresion, xAux, yAux);
-
-                yt = evaluarFuncion(solucionAnalitica, xi);
-                et = ((yt - yrk) / yt) * 100.0;
-
-                //puntoMedio = new PuntoMedio(iteracion, xi, yrk, k1, k2, yt, et);
-                listaPuntoMedio.Add(puntoMedio);
-
-                iteracion = iteracion + 1;
-            }
-
-            return listaPuntoMedio;
-        }
+        }       
         public static List<PuntoMedio> puntoMedio2(string expresion, string solucionAnalitica,
             double a, double b, double h, double x0, double y0)
         {
@@ -596,5 +550,48 @@ namespace ProyectoMetodosNumericos.Algoritmos
 
             return listaPuntoMedio;
         }
+        public static List<Heun> heun2(string expresion, string solucionAnalitica,
+           double a, double b, double h, double x0, double y0)
+        {
+            List<Heun> listaPuntoMedio = new List<Heun>();
+            Heun heun = null;
+            int iteracion = 0;
+            double xi = x0;
+            double k1 = 0;            
+            double y0i = 0;
+            double k2 = 0;
+            double yHeun = y0;
+            double yt = 0;
+            double errorGlobal = 0;
+
+            while (xi < b)
+            {
+                if (iteracion == 0)
+                {
+                    xi = x0;
+                    yHeun = y0;
+                    heun = new Heun(iteracion, xi, k1, y0i, k2, yHeun, yt, errorGlobal);
+                    listaPuntoMedio.Add(heun);
+                }
+                else
+                {
+                    k1 = calcularK(expresion, xi, yHeun);// revisar calcular despues
+                    y0i = yHeun + k1 * h;
+                    xi += h;                                      
+                    k2 = calcularK(expresion, xi, y0i);
+
+                    yHeun = yHeun + (k1+k2)/2 * h;
+                    yt = evaluarFuncion(solucionAnalitica, xi);
+                    errorGlobal = yt - yHeun;
+
+                    heun = new Heun(iteracion, xi, k1, y0i, k2, yHeun, yt, errorGlobal);
+                    listaPuntoMedio.Add(heun);
+                }
+                iteracion += 1;
+            }
+
+            return listaPuntoMedio;
+        }
+
     }
 }
