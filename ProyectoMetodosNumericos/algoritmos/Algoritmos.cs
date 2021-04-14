@@ -555,6 +555,7 @@ namespace ProyectoMetodosNumericos.Algoritmos
              int iteracion = 0;
             double xi = x0;
             double k1 = 0;
+            double xi2 = 0;
             double y0i = 0;
             double k2 = 0;
             double ypuntoMedio = y0;
@@ -567,21 +568,22 @@ namespace ProyectoMetodosNumericos.Algoritmos
                 {
                     xi = x0;
                     ypuntoMedio = y0;
-                    puntoMedio = new PuntoMedio(iteracion, xi, k1, y0i, k2, ypuntoMedio,yt, errorGlobal);
+                    puntoMedio = new PuntoMedio(iteracion, xi, k1,xi2, y0i, k2, ypuntoMedio,yt, errorGlobal);
                     listaPuntoMedio.Add(puntoMedio);                    
                 }
                 else
-                {
-                                                                                               
+                {                                
                     k1 = calcularK(expresion, xi, ypuntoMedio);// revisar calcular despues
-                    y0i = ypuntoMedio + k1 * h;                    
+                    y0i = ypuntoMedio + 0.5*k1* h;                    
                     xi += h;
-                    k2 = calcularK(expresion, xi, y0i);
+                    xi2 = xi + 0.5 * h;
+                    k2 = calcularK(expresion, xi2, y0i);
+
                     ypuntoMedio = ypuntoMedio + k2 * h;                   
                     yt = evaluarFuncion(solucionAnalitica, xi);
                     errorGlobal = yt - ypuntoMedio;
 
-                    puntoMedio = new PuntoMedio(iteracion, xi, k1, y0i, k2, ypuntoMedio, yt, errorGlobal);
+                    puntoMedio = new PuntoMedio(iteracion, xi, k1,xi2, y0i, k2, ypuntoMedio, yt, errorGlobal);
                     listaPuntoMedio.Add(puntoMedio);                    
                 }
                 iteracion += 1;
