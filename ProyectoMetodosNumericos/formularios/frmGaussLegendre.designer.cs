@@ -116,7 +116,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(762, 136);
+            this.groupBox1.Size = new System.Drawing.Size(827, 136);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información:";
@@ -133,7 +133,7 @@
             "4",
             "5",
             "6"});
-            this.cmbPuntos.Location = new System.Drawing.Point(686, 31);
+            this.cmbPuntos.Location = new System.Drawing.Point(718, 31);
             this.cmbPuntos.Name = "cmbPuntos";
             this.cmbPuntos.Size = new System.Drawing.Size(51, 26);
             this.cmbPuntos.TabIndex = 5;
@@ -143,7 +143,7 @@
             this.lblErrorVerdT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblErrorVerdT.AutoSize = true;
             this.lblErrorVerdT.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorVerdT.Location = new System.Drawing.Point(570, 97);
+            this.lblErrorVerdT.Location = new System.Drawing.Point(711, 94);
             this.lblErrorVerdT.Name = "lblErrorVerdT";
             this.lblErrorVerdT.Size = new System.Drawing.Size(21, 20);
             this.lblErrorVerdT.TabIndex = 18;
@@ -171,7 +171,7 @@
             "13",
             "14",
             "15"});
-            this.cmbCifrasSignif.Location = new System.Drawing.Point(534, 29);
+            this.cmbCifrasSignif.Location = new System.Drawing.Point(529, 29);
             this.cmbCifrasSignif.Name = "cmbCifrasSignif";
             this.cmbCifrasSignif.Size = new System.Drawing.Size(51, 26);
             this.cmbCifrasSignif.TabIndex = 4;
@@ -181,7 +181,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(330, 33);
+            this.label11.Location = new System.Drawing.Point(362, 33);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(161, 20);
             this.label11.TabIndex = 34;
@@ -192,7 +192,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(530, 70);
+            this.label9.Location = new System.Drawing.Point(638, 67);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 20);
             this.label9.TabIndex = 17;
@@ -212,7 +212,7 @@
             this.lblValorAproxT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblValorAproxT.AutoSize = true;
             this.lblValorAproxT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorAproxT.Location = new System.Drawing.Point(271, 100);
+            this.lblValorAproxT.Location = new System.Drawing.Point(362, 99);
             this.lblValorAproxT.Name = "lblValorAproxT";
             this.lblValorAproxT.Size = new System.Drawing.Size(13, 18);
             this.lblValorAproxT.TabIndex = 16;
@@ -233,7 +233,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(271, 70);
+            this.label7.Location = new System.Drawing.Point(362, 69);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 20);
             this.label7.TabIndex = 15;
@@ -282,7 +282,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(609, 33);
+            this.label2.Location = new System.Drawing.Point(641, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 25;
@@ -295,7 +295,7 @@
             this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpresion.Location = new System.Drawing.Point(146, 75);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(564, 24);
+            this.txtExpresion.Size = new System.Drawing.Size(693, 24);
             this.txtExpresion.TabIndex = 0;
             // 
             // errorProvider1
@@ -308,9 +308,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(3, 6);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(755, 57);
+            this.panel1.Size = new System.Drawing.Size(881, 63);
             this.panel1.TabIndex = 42;
             // 
             // pictureBox1
@@ -328,7 +328,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(56, 3);
+            this.label1.Location = new System.Drawing.Point(65, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(516, 48);
             this.label1.TabIndex = 32;
@@ -339,7 +339,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(815, 345);
+            this.ClientSize = new System.Drawing.Size(880, 345);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAplicarMetodo);
             this.Controls.Add(this.btnNuevo);
@@ -347,7 +347,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtExpresion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(815, 345);
             this.MinimumSize = new System.Drawing.Size(815, 345);
             this.Name = "frmGaussLegendre";
             this.Text = "Método de Gauss - Lengedre";
