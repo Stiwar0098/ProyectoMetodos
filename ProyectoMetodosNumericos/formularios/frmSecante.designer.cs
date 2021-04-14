@@ -268,7 +268,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "x0 =";
+            this.label4.Text = "x1 =";
             // 
             // label3
             // 
@@ -276,9 +276,9 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(8, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.Size = new System.Drawing.Size(41, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "x-1 = ";
+            this.label3.Text = "x0 = ";
             // 
             // label2
             // 

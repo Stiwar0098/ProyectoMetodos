@@ -168,7 +168,7 @@
             // 
             // txtb
             // 
-            this.txtb.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtb.Location = new System.Drawing.Point(60, 64);
             this.txtb.Name = "txtb";
             this.txtb.Size = new System.Drawing.Size(80, 26);
@@ -198,7 +198,7 @@
             // 
             // txta
             // 
-            this.txta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txta.Location = new System.Drawing.Point(60, 34);
             this.txta.Name = "txta";
             this.txta.Size = new System.Drawing.Size(80, 26);
@@ -230,7 +230,7 @@
             // 
             this.txtSolucionAnalitica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSolucionAnalitica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSolucionAnalitica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSolucionAnalitica.Location = new System.Drawing.Point(178, 104);
             this.txtSolucionAnalitica.Name = "txtSolucionAnalitica";
             this.txtSolucionAnalitica.Size = new System.Drawing.Size(700, 24);
@@ -240,7 +240,7 @@
             // 
             this.txtExpresion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExpresion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpresion.Location = new System.Drawing.Point(142, 74);
             this.txtExpresion.Name = "txtExpresion";
             this.txtExpresion.Size = new System.Drawing.Size(736, 24);
