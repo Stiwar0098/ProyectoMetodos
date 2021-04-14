@@ -82,5 +82,10 @@ namespace ProyectoMetodosNumericos.Formularios
         {
 
         }
+
+        private void métodosAbiertosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
